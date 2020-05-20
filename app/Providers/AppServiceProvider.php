@@ -21,8 +21,8 @@ class AppServiceProvider extends ServiceProvider
 
         $this->app->singleton('mini_program', function () {
             $config = [
-                'app_id' => config('mini_program_appid'),
-                'secret' => config('mini_program_secret'),
+                'app_id' => config('app.mini_program_appid'),
+                'secret' => config('app.mini_program_secret'),
 
                 // 下面为可选项
                 // 指定 API 调用返回结果的类型：array(default)/collection/object/raw/自定义类名
