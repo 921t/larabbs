@@ -51,7 +51,8 @@ class UsersController extends Controller
         }
 
         // 获取微信的 openid 和 session_key
-        $miniProgram = \EasyWeChat::miniProgram();
+        // $miniProgram = \EasyWeChat::miniProgram();
+        $miniProgram = app('mini_program');
         $data = $miniProgram->auth->session($request->code);
 
         if (isset($data['errcode'])) {

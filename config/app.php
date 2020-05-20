@@ -230,4 +230,7 @@ return [
 
     ],
 
+    'mini_program_appid' => env('WECHAT_MINI_PROGRAM_APPID'),
+    'mini_program_secret' => env('WECHAT_MINI_PROGRAM_SECRET'),
+
 ];
